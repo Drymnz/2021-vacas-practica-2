@@ -24,6 +24,10 @@ public class Principal {
             System.out.println("4) Ordenar Clientes Descendente");
             System.out.println("5) Registrar pelicula");
             System.out.println("6) Mostrar peliculas");
+            System.out.println("7) Ordenar peliculas Ascente respecto Nombre");
+            System.out.println("8) Ordenar peliculas Descendente respecto Nombre");
+            System.out.println("9) Ordenar peliculas Ascente respecto Id");
+            System.out.println("10) Ordenar peliculas Descendente respecto Id");
             System.out.println("-1) Salir");
             System.out.println("\n");
             menu = IngresoDatos.getEntero("Ingrese la opción ", true);
@@ -60,7 +64,22 @@ public class Principal {
                 //mostrar listado de peliculas
                 listadoPelicula.mostrarCatalogo();
             }
-            
+            if (menu == 7){
+                //Ordenar peliculas Ascente respecto Nombre
+                listadoPelicula.ordenarRespectoNombre(true);
+            }
+            if (menu == 8){
+                //Ordenar peliculas Descendente respecto Nombre
+                listadoPelicula.ordenarRespectoNombre(false);
+            }
+            if (menu == 9){
+                //mostrar peliculas Ascente respecto Id
+                listadoPelicula.ordenarRespectoId(true);
+            }
+            if (menu == 10){
+                //mostrar peliculas Ascente respecto Id
+                listadoPelicula.ordenarRespectoId(false);
+            }
         }
 
     }
