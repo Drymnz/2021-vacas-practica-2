@@ -81,7 +81,7 @@ public class ManejoPelicula {
             selec = catalogo[i];
             pos = i;
 
-            for (int j = i + 1; j < (siguienteCodigo - 1); j++) {
+            for (int j = i + 1; j < (siguienteCodigo); j++) {
 
                 if (ascendente) {
                     cambio = (catalogo[j] != null) && (selec.getId() > catalogo[j].getId());

@@ -24,8 +24,8 @@ public class Principal {
             System.out.println("4) Ordenar Clientes Descendente");
             System.out.println("5) Registrar pelicula");
             System.out.println("6) Mostrar peliculas");
-            System.out.println("7) Ordenar peliculas Ascente respecto Nombre");
-            System.out.println("8) Ordenar peliculas Descendente respecto Nombre");
+            System.out.println("7) Ordenar peliculas Descendente respecto Nombre");
+            System.out.println("8) Ordenar peliculas Ascente respecto Nombre");
             System.out.println("9) Ordenar peliculas Ascente respecto Id");
             System.out.println("10) Ordenar peliculas Descendente respecto Id");
             System.out.println("-1) Salir");
