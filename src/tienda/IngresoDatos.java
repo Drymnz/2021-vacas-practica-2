@@ -35,4 +35,14 @@ public class IngresoDatos {
         return res;
     }
     
+    public static String getTextoColor(int color,String texto){
+        switch (color) {
+            case 0:
+                return "\033[32m"+texto+"\u001B[0m";
+            case 1:
+                return "\033[31m"+texto+"\u001B[0m";
+            default:
+                return texto;
+        }
+    }
 }
