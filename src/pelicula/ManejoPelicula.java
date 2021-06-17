@@ -12,9 +12,7 @@ public class ManejoPelicula {
 
     // agregar pelicula
     public void agreagarPelicula(int id, int fecha, String nombre, String categoria) {
-        if (siguienteCodigo == categoria.length()) {
-            ampliarEspacio();
-        }
+        ampliarEspacio();
         catalogo[siguienteCodigo] = new Pelicula(id, fecha, nombre, categoria);
         siguienteCodigo++;
     }
@@ -28,7 +26,7 @@ public class ManejoPelicula {
     }
 
     public void ampliarEspacio() {
-        Pelicula[] nuevo = new Pelicula[(catalogo.length + 3)];
+        Pelicula[] nuevo = new Pelicula[(siguienteCodigo + 1)];
         for (int i = 0; i < catalogo.length; i++) {
             nuevo[i] = catalogo[i];
         }
