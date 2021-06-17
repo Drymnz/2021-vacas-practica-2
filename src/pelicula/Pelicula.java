@@ -54,7 +54,7 @@ public class Pelicula {
     // fin get
     // mostrar informacion al usuario
     public String mostrar(){
-        return "id < "+ this.id +" > nombre < "+this.nombre+" > fecha < "+this.fecha+" > categoria <"+this.categoria+" > ";
+        return "id < "+ this.id +" > nombre < "+this.nombre+" > fecha < "+this.fecha+" > categoria < "+this.categoria+" > ";
     }
     //fin de mostrar infromacion
 }

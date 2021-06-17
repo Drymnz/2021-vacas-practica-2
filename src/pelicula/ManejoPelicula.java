@@ -43,8 +43,8 @@ public class ManejoPelicula {
         }
     }
     public String disponible(boolean disponible){
-        if (disponible) return IngresoDatos.getTextoColor(0, " Disponible ");
-        else return IngresoDatos.getTextoColor(1, " No disponible ");
+        if (disponible) return IngresoDatos.resaltadorTexto(0, " Disponible ");
+        else return IngresoDatos.resaltadorTexto(1, " No disponible ");
     }
     // fin de mostrar catalogo
     // metodo ordenar

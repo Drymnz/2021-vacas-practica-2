@@ -35,7 +35,7 @@ public class IngresoDatos {
         return res;
     }
     
-    public static String getTextoColor(int color,String texto){
+    public static String resaltadorTexto(int color,String texto){
         switch (color) {
             case 0:
                 return "\033[32m"+texto+"\u001B[0m";
