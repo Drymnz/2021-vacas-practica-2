@@ -48,6 +48,23 @@ public class ManejoPelicula {
     }
     // fin de mostrar catalogo
     // metodo ordenar
-    
+    public void ordenarRespectoNombre(boolean ascendente){
+        boolean cambio = true;
+        for (int i = 1; i < siguienteCodigo; i++) {
+            for (int j = 0; j < (siguienteCodigo-i)); j++) {
+                if (ascendente) {
+                    cambio = (catalogo[j].getNombre().compareTo(catalogo[j+1].getNombre()) < 0);
+                } else {
+                    cambio = (catalogo[j].getNombre().compareTo(catalogo[j+1].getNombre()) > 0);
+                }
+
+                if (cambio) {
+                    Pelicula aux = catalogo[j];
+                    catalogo[j] = catalogo[j+1];
+                    catalogo[j+1] = aux;
+                }
+            }
+        }
+    }
     // fin ordenar
 }
